@@ -1,0 +1,29 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        agp_version = '8.6.0'
+        agp_version1 = '7.4.0'
+    }
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$agp_version1"
+    }
+}
+
+ext {
+    buildToolsVersion = '34.0.0'
+    buildToolsVersion1 = '30.0.3'
+    compileSdkVersion = buildToolsVersion1
+    compileSdkVersion1 = 34
+    buildToolsVersion2 = buildToolsVersion1
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
